@@ -1,31 +1,39 @@
 const express = require('express');
 const app = express();
+const cors = require('cors');
 const port = 3003;
 const bodyParser = require('body-parser');
 
 // Middleware to parse JSON bodies
 app.use(bodyParser.json());
+app.use(
+   cors({
+      origin: 'http://localhost:5173',
+   })
+);
 
 const resultData = [
    {
-    firstName: 'Mahidul',
-    lastName: 'Islam',
-    dob: '02/08/1998',
-    passportOrId: 'A06017401',
-    result: {
-      listening: 7,
-      speaking: 6
-    }
+      id: 'd1',
+      firstName: 'Mahidul',
+      lastName: 'Islam',
+      dob: '02/08/1998',
+      passportOrId: 'A06017401',
+      result: {
+         listening: 7,
+         speaking: 6,
+      },
    },
    {
+      id: 'd2',
       firstName: 'John',
       lastName: 'Doe',
       dob: '01/15/1995',
       passportOrId: 'id',
-      result:{
-        speaking: 7,
-        listening: 6
-      }
+      result: {
+         speaking: 7,
+         listening: 6,
+      },
    },
 ];
 
@@ -48,11 +56,42 @@ app.post('/result-form', (req, res) => {
       );
    });
 
+   // console.log(req?.body)
+
    if (filteredResult.length > 0) {
       // If there is a match, send the matched result
-      res.send(filteredResult);
+      console.log(...filteredResult)
+      res.send(...filteredResult);
    } else {
       // If there is no match, send a response indicating no match
+
+      // console.log()
+      res.send({message: 'No matching result found'});
+   }
+});
+
+app.get('/get-result-by-id', (req, res) => {
+   const {id} = req?.query
+
+
+
+   // Filter resultData based on request body
+   const filteredResult = resultData.filter(data => {
+      return (
+         data.id === id 
+      );
+   });
+   // console.log('data ase kina deko',filteredResult)
+   // console.log(req?.body)
+
+   if (filteredResult.length > 0) {
+      // If there is a match, send the matched result
+      // console.log(...filteredResult)
+      res.send(...filteredResult);
+   } else {
+      // If there is no match, send a response indicating no match 
+
+      // console.log()
       res.send({message: 'No matching result found'});
    }
 });
