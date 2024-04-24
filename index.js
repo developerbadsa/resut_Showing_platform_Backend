@@ -23,25 +23,25 @@ const resultData = [
       centerNumber: 'BD050',
       testDate: '26/08/2023',
       passportOrId: 'A06017401',
-      result: {
-         listening: 6.5,
-         speaking: 6.5,
-         reading: 5.0,
-         writing: 6.5,
-         overall: 4.5
-      },
+      result: [
+         {listening: 6.5},
+         {speaking: 6.5},
+         {reading: 5.0},
+         {writing: 6.5},
+         {overall: 4.5}
+      ],
    },
-   {
-      id: 'd2',
-      firstName: 'John',
-      lastName: 'Doe',
-      dob: '01/15/1995',
-      passportOrId: 'id',
-      result: {
-         speaking: 7,
-         listening: 6,
-      },
-   },
+   // {
+   //    id: 'd2',
+   //    firstName: 'John',
+   //    lastName: 'Doe',
+   //    dob: '01/15/1995',
+   //    passportOrId: 'id',
+   //    result: {
+   //       speaking: 7,
+   //       listening: 6,
+   //    },
+   // },
 ];
 
 // routings
