@@ -18,17 +18,17 @@ const resultData = [
       firstName: 'Mahidul',
       lastName: 'Islam',
       dob: '02/08/1998',
-      candidateNumber:'016283',
-      trfNumber:'23BD016283ISLM050A',
+      candidateNumber:'016483',
+      trfNumber:'23BD016483ISLM050A',
       centerNumber: 'BD050',
-      testDate: '26/08/2023',
-      passportOrId: 'A06017401',
+      testDate: '28/08/2023',
+      passportOrId: 'A06027401',
       "result": [
-         { "score": 6.5, "name": "speaking" },
+         { "score": 6.0, "name": "speaking" },
          { "score": 6.5, "name": "listening" },
-         { "score": 5.0, "name": "reading" },
-         { "score": 6.5, "name": "writing" },
-         { "score": 4.5, "name": "overall" }
+         { "score": 6.0, "name": "reading" },
+         { "score": 5.5, "name": "writing" },
+         { "score": 6.0, "name": "overall" }
        ]
    },
    // {
