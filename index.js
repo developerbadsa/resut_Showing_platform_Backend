@@ -23,13 +23,13 @@ const resultData = [
       centerNumber: 'BD050',
       testDate: '26/08/2023',
       passportOrId: 'A06017401',
-      result: [
-         {listening: 6.5},
-         {speaking: 6.5},
-         {reading: 5.0},
-         {writing: 6.5},
-         {overall: 4.5}
-      ],
+      "result": [
+         { "score": 6.5, "name": "speaking" },
+         { "score": 6.5, "name": "listening" },
+         { "score": 5.0, "name": "reading" },
+         { "score": 6.5, "name": "writing" },
+         { "score": 4.5, "name": "overall" }
+       ]
    },
    // {
    //    id: 'd2',
