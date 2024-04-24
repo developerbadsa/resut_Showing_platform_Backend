@@ -18,10 +18,17 @@ const resultData = [
       firstName: 'Mahidul',
       lastName: 'Islam',
       dob: '02/08/1998',
+      candidateNumber:'016283',
+      trfNumber:'23BD016283ISLM050A',
+      centerNumber: 'BD050',
+      testDate: '26/08/2023',
       passportOrId: 'A06017401',
       result: {
-         listening: 7,
-         speaking: 6,
+         listening: 6.5,
+         speaking: 6.5,
+         reading: 5.0,
+         writing: 6.5,
+         overall: 4.5
       },
    },
    {
