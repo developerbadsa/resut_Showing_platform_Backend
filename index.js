@@ -8,7 +8,7 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 app.use(
    cors({
-      origin: ['http://localhost:5173', 'https://result-showing-platform-frontend.vercel.app', 'https://willowy-dasik-f78ba2.netlify.app','bdsielts.info']
+      origin: ['http://localhost:5173', 'https://result-showing-platform-frontend.vercel.app', 'https://willowy-dasik-f78ba2.netlify.app','https://bdsielts.info']
    })
 );
 
