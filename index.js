@@ -24,11 +24,11 @@ const resultData = [
       testDate: '28/08/2023',
       passportOrId: 'A06027401',
       "result": [
-         { "score": 6.0, "name": "speaking" },
-         { "score": 6.5, "name": "listening" },
-         { "score": 6.0, "name": "reading" },
-         { "score": 5.5, "name": "writing" },
-         { "score": 6.0, "name": "overall" }
+         { "score": "6.0", "name": "speaking" },
+         { "score": "6.5", "name": "listening" },
+         { "score": "6.0", "name": "reading" },
+         { "score": "5.5", "name": "writing" },
+         { "score": "6.0", "name": "overall" }
        ]
    },
    // {
